@@ -5,13 +5,13 @@ body {
 }
 
 a {
-	color: #B0F375;
+	color: #FFFFFF;
 	text-decoration: none;
 }
 
 h1 {
-	font-size: 1.750em;
-	letter-spacing: -1.5px;
+	font-size: 2.750em;
+	letter-spacing: -1.1px;
 }
 
 h2 {
@@ -33,32 +33,27 @@ h2 {
 }
 
 ul.nav {
-	margin: 120px 0 0 0;
+	float: center;
 	list-style: none;
-	float: right;
-	border-bottom: solid;
-	border-width: 2px;
-	border-color: #FFFFFF;
-}
-
-ul.nav li a {
-	color: #FFFFFF;
 }
 
 ul.nav li {
 	float: left;
 	padding: 7px 20px;
-	font-size: 1.4em;
+	margin: 0px 10px;
 	background: #00BFFF;
-	border-color: #FFFFFF;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
+	border-radius: 25px;
+	text-transform: uppercase;
 }
 
 ul.nav li:hover {
 	background-color: #00AFFF;
 }
 
+#intro {
+	margin: 100px 0 -40px 0;
+	padding: 0 0 0 80px;
+}
 
 #header-img img {
 	border: 8px solid #FFFFFF;
