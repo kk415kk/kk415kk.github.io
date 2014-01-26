@@ -1,0 +1,77 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #FFFFFF;
+	background: #87cefa url('img/bg-texture.jpg') repeat;
+}
+
+a {
+	color: #B0F375;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 1.750em;
+	letter-spacing: -1.5px;
+}
+
+h2 {
+	font-size: 1.500em;
+	color: #00BFFF;
+}
+
+.button {
+	color: #FFFFFF;
+	background-color: #00BFFF;
+	padding: 10px 20px;
+	margin: 40px 0px;
+	border-radius: 25px;
+	text-transform: uppercase;
+}
+
+.button:hover {
+	background-color: #00AFFF;
+}
+
+ul.nav {
+	margin: 120px 0 0 0;
+	list-style: none;
+	float: right;
+	border-bottom: solid;
+	border-width: 2px;
+	border-color: #FFFFFF;
+}
+
+ul.nav li a {
+	color: #FFFFFF;
+}
+
+ul.nav li {
+	float: left;
+	padding: 7px 20px;
+	font-size: 1.4em;
+	background: #00BFFF;
+	border-color: #FFFFFF;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+ul.nav li:hover {
+	background-color: #00AFFF;
+}
+
+
+#header-img img {
+	border: 8px solid #FFFFFF;
+	margin: 15px 0 20px 0;
+	transform:rotate(-7deg);
+	-ms-transform:rotate(-7deg); /* IE 9 */
+	-webkit-transform:rotate(-7deg); /* Safari and Chrome */
+}
+
+#copyright {
+	border-top: 2px solid #FFFFFF;
+	padding: 10px 0px;
+	margin: 15px 0px;
+	font-size: 0.8em;
+	text-align: center;
+}
