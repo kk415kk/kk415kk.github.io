@@ -1,7 +1,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	color: #FFFFFF;
-	background: #ddef6f;
+	background: #87cefa url('img/bg-texture.jpg') repeat;
 }
 
 a {
