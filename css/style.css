@@ -65,6 +65,10 @@ ul.nav li:hover {
 	-webkit-transform:rotate(-7deg); /* Safari and Chrome */
 }
 
+#bio {
+	margin-left: 10px;
+}
+
 #copyright {
 	border-top: 2px solid #FFFFFF;
 	padding: 10px 0px;
