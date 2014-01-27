@@ -34,6 +34,10 @@ h2 {
 	background-color: #00AFFF;
 }
 
+.form-field {
+	color: #000000;
+}
+
 ul.nav {
 	font-family: 'Ubuntu';
 	float: center;
@@ -76,10 +80,6 @@ ul.nav li:hover {
 
 #first-course {
 	margin-top: 10px;
-}
-
-#form {
-	color: #000000;
 }
 
 #last-course {
