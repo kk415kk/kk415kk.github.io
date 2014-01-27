@@ -78,6 +78,10 @@ ul.nav li:hover {
 	margin-top: 10px;
 }
 
+#form {
+	font-color: #000000;
+}
+
 #last-course {
 	margin-bottom: 10px;
 }
