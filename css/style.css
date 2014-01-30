@@ -22,18 +22,6 @@ h2 {
 	color: #00BFFF;
 }
 
-.button {
-	color: #FFFFFF;
-	background-color: #00BFFF;
-	padding: 10px 20px;
-	margin: 40px 0px;
-	border-radius: 25px;
-}
-
-.button:hover {
-	background-color: #00AFFF;
-}
-
 .form-field {
 	color: #000000;
 }
@@ -53,6 +41,7 @@ ul.nav li {
 }
 
 ul.nav li:hover {
+	font-family: 'Ubuntu', sans-serif;
 	background-color: #00AFFF;
 }
 
