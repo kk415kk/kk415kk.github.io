@@ -76,6 +76,28 @@
     }
 </pre>
 			</div>
+
+And binary search:
+			<div class="code-box">
+<pre>
+    private static int binSearch(int[] arr, int key) {
+        int lo = 0;
+        int hi = arr.length-1;
+
+        while (lo <= hi) {
+            int mid = (hi+lo)/2;
+            if (arr[mid] == key) {
+                return mid;
+            } else if (arr[mid] > key) {
+                hi = mid;
+            } else {
+                lo = mid+1;
+            }
+        }
+        return -1;
+    }
+</pre>			
+			</div>
 			</p>	
 		
 			<h3>2/1/14: Longest Increasing Subsequence</h3>
@@ -95,26 +117,6 @@
         }
         return solution;
 }</pre>
-
-And binary search:
-<pre>
-    private static int binSearch(int[] arr, int key) {
-        int lo = 0;
-        int hi = arr.length-1;
-
-        while (lo <= hi) {
-            int mid = (hi+lo)/2;
-            if (arr[mid] == key) {
-                return mid;
-            } else if (arr[mid] > key) {
-                hi = mid;
-            } else {
-                lo = mid+1;
-            }
-        }
-        return -1;
-    }
-</pre>
 			</div>
 			</p>
 				
