@@ -38,6 +38,10 @@
 .alpha{margin-left:0px;}
 .omega{margin-right:0px;}
 
+.left_sidebar{
+	width: 100px;
+}
+
 .container{
 	width: 1000px; 
 	margin: auto;
