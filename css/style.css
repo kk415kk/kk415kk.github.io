@@ -36,6 +36,61 @@ h2 {
 	color: #000000;
 }
 
+input[type="text"] {
+	padding-left: 5px;
+	border: 2px solid #fcfbcc;
+	border-radius: 5px;
+	background: white;
+	color: black;	
+}
+
+input[type="text"]:enabled {
+	background: #fcfbcc;
+}
+
+input[type="text"]:focus {
+	border: 3px solid steelblue;
+}
+
+input[type="email"] {
+	padding-left: 5px;
+	border: 2px solid #fcfbcc;
+	border-radius: 5px;
+	background: white;
+	color: black;
+}
+
+input[type="email"]:enabled {
+	background: #fcfbcc;
+}
+
+input[type="email"]:focus {
+	border: 3px solid steelblue;
+}
+
+textarea {
+	padding: 7px;
+	border: 2px solid #fcfbcc;
+	border-radius: 5px;
+	background: white;
+}
+
+textarea:enabled {
+	background: #fcfbcc;
+}
+
+textarea:focus {
+	border: 3px solid steelblue;
+}
+
+input[type="submit"] {
+	border: 2px solid steelblue;
+	border-radius: 5px;
+	background: steelblue;
+	color: white;
+	cursor: pointer;
+}
+
 ul.nav {
 	font-family: 'Ubuntu';
 	float: center;
@@ -66,19 +121,17 @@ ul.nav li:hover {
 }
 
 #about-content p {
-	padding: 5px 15px;
-	border-left: 5px transparent;
-	-o-transition:.3s;
-  	-ms-transition:.3s;
-  	-moz-transition:.3s;
-  	-webkit-transition:.3s;
-  	transition:.3s;
+	border-left: 3px solid transparent;
+	padding-left: 15px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition:.5s;
 }
 
 #about-content p:hover {
-	border-left: 3px solid lightblue;
-	background-color: teal;
-	color: black;
+	border-left: 3px solid teal;
 }
 
 #bio {
