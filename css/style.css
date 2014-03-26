@@ -231,4 +231,7 @@ ul.nav li:hover {
 .left-sidebar {
 	background-color: black;
 	opacity: 0.4;
+	padding: 5px 15px 10px 15px;
+	border: 1px transparent solid;
+	border-radius: 3px;
 }
