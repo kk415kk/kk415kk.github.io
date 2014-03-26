@@ -27,10 +27,10 @@ h2 {
 	color: #00BFFF;
 }
 
-h6 {
+h4 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.0em;
 	font-style: bold;
+	display: inline-block;
 	color: lightgreen;
 }
 
