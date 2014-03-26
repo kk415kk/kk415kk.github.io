@@ -27,7 +27,7 @@ h2 {
 	color: #00BFFF;
 }
 
-p .project-title {
+p.project-title {
 	font-family: 'Roboto', sans-serif;
 	font-style: bold;
 	color: lightgreen;
