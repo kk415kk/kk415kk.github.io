@@ -10,7 +10,20 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css" type="text/css" media"screen">
+	<script src="../scripts/jquery-1.10.2.min.js"></script>
 </head>
+
+<script>
+var bt = $('#left-sidebar').position().top;
+
+$(window).scroll(function() {
+    var wst = $(window).scrollTop();
+
+    (wst >= bt) ?
+    $('#left-sidebar').css({position: 'fixed', top: 15+'px' }) :  
+    $('#left-sidebar').css({position: 'absolute', top: bt+'px' })
+});
+</script>
 
 <body>
 	<div class="container clearfix">
@@ -35,61 +48,69 @@
             <p>2/20/14: My Github can be found <a href="http://www.github.com/kk415kk">here</a>. Due to some private source issues, some projects may not be shown on Github publicly. 
 			You can request access through my contact page.</p>
 		</div>
-		<div class="grid_4 left-sidebar">
+		<div class="grid_3 left-sidebar">
 		<h3>Index of Projects:</h3>
 		<h4>Web Dev</h4>
-		<a href="#moocRP">moocRP</a>
+		<a href="#moocRP">moocRP</a><br>
+		<a href="#mapreduce">MapReduce on Amazon EC2</a><br>
+		<a href="#portfolio-website">Personal Portfolio Website</a><br>
+		<h4>Software Dev</h4>
+		<a href="#image-metadata-extractor">Image Metadata Extractor</a><br>
+		<a href="#pacman">Pacman AI Game</a><br>
+		<a href="#simpledb">SimpleDB RDMS</a><br>
+		<h4>Security</h4>
+		<a href="#vmpentest">Virtual Machine Penetration Testing</a><br>
 		</div>
 		<div class="grid_8 omega">
 			<h2>current projects</h2>
 			<p>
-			<font color="lightgreen"><strong>moocRP</strong></font><br> 
+			<font color="lightgreen" id="moocRP"><strong>moocRP</strong></font><br> 
 			<strong><font size="2.0em">Technologies: HTML, CSS, JavaScript, Node.js, Sails.js, Bootstrap</font></strong>
-			<ul>
+			<ul class="project-description">
 				<li>Developed secure, standalone JavaScript web application from scratch, through consultation with researchers on user stories</li>
 				<li>Followed MVC design pattern and used Node.js, Sails.js platforms to develop both front and backend infrastructure</li>
 				<li>Designed sleek, grid-based UI through CSS3 and jQuery using personally modified version of the Bootstrap framework</li>
 				<li>Created RESTful API for UC Berkeley’s CalAccess system to automate data retrieval from my web app in the form of JSON</li>
 				<li>Contributing to Node.js community through development of open source Node.js CAS client npm package/module</li>
 			</ul>
-			<font color="lightgreen"><strong>Virtual Machine Penetration Testing</strong></font><br> 
+			<font color="lightgreen" id="vmpentest"><strong>Virtual Machine Penetration Testing</strong></font><br> 
 			<strong><font size="2.0em">Technologies: C, Python, bash, gdb</font></strong>
-			<ul>
+			<ul class="project-description">
 				<li>Exploited a vulnerable VM with five user accounts remotely via vulnerable FTP service with gdb for stack analysis</li>
 				<li>Examined C code to detect and take advantage of memory leaks, fencepost errors, etc.</li>
 				<li>Wrote Python and Bash scripts to pipe hex data and perform buffer overflows, bypassing ASLR defenses for root shell access </li>
 			</ul>
-			<font color="lightgreen"><strong>Image Metadata Extracter</strong></font><br> 
+			<font color="lightgreen" id="image-metadata-extractor"><strong>Image Metadata Extractor</strong></font><br> 
 			<strong><font size="2.0em">Technologies: C</font></strong>
-			<ul>
+			<ul class="project-description">
 				<li>Developed a secure algorithm to parse through hex bytes of JPEG, BMP, and TIFF files to extract metdata information such as Date, Location, Model, etc.</li>
 				<li>Designed to be security-oriented such that malicious/modified image files cannot exploit the parsing mechanism to crash the program</li>
 				<li>Wrote numerous tests to ensure security of parser through modifying images in a hex editor</li>
 			</ul>
-			<font color="lightgreen"><strong>Pacman AI game</strong></font><br>
+			<font color="lightgreen" id="pacman"><strong>Pacman AI game</strong></font><br>
 			<strong><font size="2.0em">Technologies: Python</font></strong>
-			<ul>
+			<ul class="project-description">
 				<li>Developed various search algorithms, including DFS, BFS, UCS, and A* search) for the Pacman AI to optimally capture all food pellets</li>
 				<li>Created heuristics for finding almost optimal paths in a timely fashion</li>
 				<li>Implemented minimax and expectimax combined with state evaluation heuristics for Pacman to quickly win with an above average score</li>
 			</ul>
-			<font color="lightgreen"><strong>SimpleDB RDMS</strong></font><br>
+			<font color="lightgreen" id="simpledb"><strong>SimpleDB RDMS</strong></font><br>
 			<strong><font size="2.0em">Technologies: Java, SQL</font></strong>
-			<ul>
+			<ul class="project-description">
 				<li>Implemented a simple database structure in Java with common database features such as buffer pools, pages, files, and tuples</li>
 				<li>Currently working on the query and file components of the database</li>
 			</ul>
-			<font color="lightgreen"><strong>Personal Portfolio Website</strong></font><br>
+			<font color="lightgreen" id="portfolio-website"><strong>Personal Portfolio Website</strong></font><br>
 			<strong><font size="2.0em">Technologies: HTML, CSS, JavaScript, Ruby, Rails</font></strong>
-			<ul>
+			<ul class="project-description">
 				<li>Designed and implemented the HTML/CSS code while learning the languages in two days</li>
 				<li>Optimized page load speed through use of CSS3 instead of jQuery transitions</li>
 				<li>Soon migrating to Ruby on Rails web app to manage dynamic blog content</li>
 				<li>Researching <font color="green">Google Docs API</font> for a more secure, spam-free implementation of a contact system</li>
 			</ul>
-			<font color="lightgreen"><strong>MapReduce on Amazon EC2</strong></font><br>
+			<font color="lightgreen" id="mapreduce"><strong>MapReduce on Amazon EC2</strong></font><br>
 			<strong><font size="2.0em">Technologies: Java, Hadoop (MapReduce)</font></strong>
-			<ul>
+			<ul class="project-description">
 				<li>Utilized the Hadoop framework to process large documents and calculate word relationships on Amazon’s EC2 clusters</li>
 				<li>Implemented efficient MapReduce algorithm through efficient selection and usage of data structures (Set, Hashtable, ArrayList)</li>
 				<li>Benchmarked a speed of 51 seconds, less than half the time within the required two minutes (200% speedup)</li>
@@ -105,7 +126,9 @@
 				<li>Paw for Paw (HTML/CSS, PHP, JavaScript)</li>
 			</ul>
 			</p>
-			
+			<div id="to-top">
+				<a href="#header-img">Back to Top</a>
+			</div>
 		</div> 
 		<div id="copyright" class="grid_12">
 			<p>&copy; 2014 Kevin Kao. All Rights Reserved.</p>
@@ -114,5 +137,4 @@
 </body>
 
 </html>
-
 
