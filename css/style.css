@@ -227,3 +227,8 @@ ul.nav li:hover {
 #to-top {
 	text-align: right;
 }
+
+.left-sidebar {
+	background-color: black;
+	opacity: 0.4;
+}
